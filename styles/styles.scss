@@ -372,6 +372,30 @@ section {
     }
 }
 
+//Portfolios
+.port-text{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    .portfolio-item{
+        position: relative;
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+        .hover-items{
+            
+        }
+    }
+}
 
 /*Independed components*/
 .btn-con{
