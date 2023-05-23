@@ -41,3 +41,15 @@ function PageTransitions() {
 }
 
 PageTransitions();
+
+let previousTitle = document.title
+
+window.addEventListener('blur', () => {
+    previousTitle = document.title
+    document.title = '¡Dont Go 😢 ! ¡Come Back!'
+
+})
+
+window.addEventListener('focus', () => {
+    document.title = previousTitle
+})
