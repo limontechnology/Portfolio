@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        @import url(./styles/styles.scss);
+body {
+    background-color: var(--color-primary);
+}
+
+:root {
+    --color-primary: #191d2b;
+    --color-secondary: #27AE60;
+    --color-icon: #FFFFFF; 
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --color-grey-7: #FFFFFF;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.light-mode{
+    --color-primary: #FFFFFF;
+    --color-secondary: #274bae;
+    --color-icon: #FFFFFF; 
+    --color-white: #454E56;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #6c7983;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #ebdddd;
+    --color-grey-6: #12181b;
+    --color-grey-7: #e7d7d7;
+}
+
+theme-btn {
+    top: 5%;
+    right: 3%;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,.3);
+    transition: all .6s ease-in-out;
+    &:active{
+        transform: translateY(-3px);
+    }
+}
+i{
+        font-size: 1.5rem;
+        color: var(--color-grey-2);
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        color: var(--color-icon);
+    }
+
+    span{
+        display: flex;
+        justify-content: flex-start;
+        color: var(--color-secondary);
+        font-size: 50px;
+        margin-top: 50px;
+        margin-left: 25px;
+        
+    }
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    .blog{
+        width: 450px;
+        position: relative;
+        background-color: var(--color-grey-5);
+        border-radius: 5px;
+        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+        transition: all .4s ease-in-out;
+        &:hover{
+        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+        transform: translateY(-5px);
+        transition: all .4s ease-in-out;
+        .img{
+            filter: grayscale(0);
+            transform: scale(1.1);
+            box-shadow: 1px 4px 15px rgba(0,0,0,.8);
+        }
+    }
+    .img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        filter: grayscale(100%);
+        transition: all .4s ease-in-out;
+        }
+        .blog-text{
+            margin-top: -7px;
+            padding: 1.1rem;
+            border-top: 8px solid var(--color-secondary);
+            .h4{
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+                transition: all .4s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    color: var(--color-secondary);
+                }
+            }
+            .p{
+                color: var(--color-grey-2);
+                line-height: 2rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.platzi{
+    width: 60px !important;
+    height: 60px !important;
+    margin: 30px;
+    margin-left: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pdf{
+    width: 50px !important;
+    height: 65px !important;
+    margin: 30px;
+    margin-left: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+
+<span><strong>Certificados</strong></span>
+<div class="blogs">
+    <div class="blog">
+        <img src="./img/Certifications/Computacion Basica.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Computacion Basica
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/2793-computacion-basica/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Computacion Basica.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+                <p>Curso de computacion basica</p>
+            <p class="date">19/12/22</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Algoritmos y Diagramas de Flujo.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Pensamiento Logico
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/3221-pensamiento-logico/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Pensamiento Logico - Algoritmos y Diagramas de Flujo.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de pensamiento logico: Algoritmos y Diagramas de Flujo
+            </p><p class="date">26/03/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Funciones y Estructuras de Control.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Funciones y Estructuras de Control 
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/3222-pensamiento-logico-estructuras/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Pensamiento Logico - Funciones y Estructuras de Control.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones 
+            </p><p class="date">17/03/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Lenguajes de Programacion.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Lenguajes de Programacion 
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/3223-pensamiento-logico-lenguajes/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Pensamiento Logico - Lenguajes de Programacion.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de Pensamiento Lógico: Lenguajes de programacion
+            </p><p class="date">27/03/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Programacion Basica.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Programacion Basica
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/3208-programacion-basica/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Programacion Basica.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de Programacion Basica
+            </p><p class="date">06/03/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Prework.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Curso de Prework
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/2042-prework-windows/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Prework - Configuracion de Entorno de Desarrollo en Windows.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de Prework: Configuracion de entorno de desarrollo en windows 
+            </p><p class="date">09/03/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Terminal y Linea de Comandos.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Terminal y Linea de Comandos  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/2292-terminal/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Introduccion a la Terminal y Linea de Comandos.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de introduccion a la terminal y linea de comandos 
+            </p><p class="date">17/04/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Git y GitHub.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Git y GitHub  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/1557-git-github/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Git & GitHub.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso Profesional de Git y GitHub 
+            </p><p class="date">09/05/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/FrontEnd.png" alt="">
+        <div class="blog-text">
+            <h4>
+                FrontEnd  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/2467-frontend-developer/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Frontend Developer.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de FrontEnd Developer  
+            </p><p class="date">26/05/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Aprendizaje en Linea.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Estrategias para aprender en linea  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/2643-aprender/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Estrategias para Aprender en Linea.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de aprendizaje en linea para cumplir tus objetivos profesionales
+            </p><p class="date">08/03/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Gestion del Tiempo.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Gestion del Tiempo  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/1749-gestion-tiempo/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Gestion Efectiva del Tiempo.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de gestion efectiva del tiempo 
+            </p><p class="date">17/03/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Crear Habitos.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Creacion de habitos  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/2356-creacion-habitos/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Creacion Habitos.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso para crear habitos positivos 
+            </p><p class="date">14/04/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Manejo de Emociones.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Manejo de Emociones  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/2496-emociones-productividad/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Manejo de Emociones Productividad y Organizacion.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de manejo de emociones para la productividad y la organizacion 
+            </p><p class="date">30/04/23</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./img/Certifications/Tecnicas de Estudio.png" alt="">
+        <div class="blog-text">
+            <h4>
+                Tecnicas de estudio  
+            </h4>
+            <a href="https://platzi.com/p/limontechnology/curso/1761-formacion/diploma/detalle/" target="_blank">
+                <img class="platzi" src="./img/Certifications/Platzi_Logo.png" alt="">
+                <a href="./img/Certifications/Diploma Tecnicas de Estudio.pdf" target="_blank"><img class="pdf" src="./img/Certifications/PDF_Logo.png" alt="" ></a></a>
+            <p>
+                Curso de tecnicas efectivas de estudio
+            </p><p class="date">13/05/23</p>
+        </div>
+    </div>
+
+    <div class="theme-btn">
+        <i class="fas fa-adjust">
+            <i class="fa-solid fa-sun-bright"></i>
+        </i>
+    </div>
+
+    <script>
+    const themeBtn = document.querySelector('.theme-btn')
+    themeBtn.addEventListener('click', () => {
+        let element = document.body;
+        element.classList.toggle('light-mode')
+    })
+    </script>
+</body>
+</html>
