@@ -984,5 +984,5 @@ i {
 }
 
 .certifications:hover {
-  color: #2a2e35;
+  color: var(--color-grey-4);
 }/*# sourceMappingURL=styles.css.map */
